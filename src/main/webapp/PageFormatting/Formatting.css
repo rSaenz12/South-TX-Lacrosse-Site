@@ -1,0 +1,121 @@
+/*
+Author: Russell Saenz
+Date:5/10/2025
+ */
+
+@charset "UTF-8";
+
+.generic-black-text {
+	color: black;
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.bold-black-text {
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.bio-body-text {
+	color: black;
+	text-align: left;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+
+.body {
+	background-image:
+		url("https://athletics.middlebury.edu/images/2025/2/24/MLaxCelebration24StLawrence2__1_.jpg?width=1416&height=797&mode=crop&quality=80&format=jpg");
+	background-position: center, bottom;
+	background-size: cover;
+	/* margin-top: 100px;*/
+}
+
+.pages-bar {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	padding-right: 30px;
+	/*added to put logo and buttons on same plane, remove if changing*/
+	top: 0;
+	/*added to put logo and buttons on same plane, remove if changing*/
+	left: 0;
+	width: 100%;
+	/* bar goes from one side all the way to other, but has slight space of margin*/
+	height: 50px;
+	/*height of the bar is 35, can change later depending on how it looks*/
+	background-color: black;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+	z-index: 1000;
+}
+
+.pages-bar form {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.pages-bar button {
+	background: black;
+	color: white; /* Text Color*/
+	padding-right: 70px;
+	/*width: 300%; bar goes from one side all the way to other, but has slight space of margin*/
+	/*height: 35px;height of the bar is 35, can change later depending on how it looks*/
+	/*padding: 50px, 20px; 10 pixels side to side, 20 up and down of padding in buttons*/
+	font-size: 30px;
+	cursor: pointer;
+	border: 0px solid black;
+	border-radius: 10px;
+	transition: background-color 0.3s, color 0.3s;
+	font-size: 30px
+}
+
+.pages-bar img {
+	width: full;
+	height: auto;
+	max-height: 49px;
+}
+
+.PagesBar button:hover {
+	background-color: gray;
+}
+
+.main-body-page {
+	/*margin-left: 400px;
+	margin-right: 400px;*/
+	margin: auto;
+    max-width: 900px;
+    /*padding: 20px;*/
+	padding-top: 80px;
+	height: 1300px;
+	background-color: white;
+}
+
+.main-body-page img {
+	width: 750px;
+	align-items: center;
+	width: 100%;
+}
+
+.main-body-page iframe {
+	position: absolute;
+	top: 250px;
+	/* You can adjust this value based on how far from the top you want the iframe */
+	left: 50%;
+	/* This will position the iframe in the center horizontally */
+	transform: translateX(-50%);
+	/* This offsets the iframe by 50% of its width, effectively centering it */
+	width: 750px; /* Set the width of the iframe */
+	height: 536px; /* Set the height of the iframe */
+	max-width:100%;
+	max-height:100%;
+}
